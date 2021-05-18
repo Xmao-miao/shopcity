@@ -12,9 +12,10 @@ const Welcome = () =>
 const Users = () =>
     import ('./components/user/Users.vue')
 
-const rout = () =>
-    import ('./components/rote/rout.vue')
-
+const Rights = () =>
+    import ('./components/power/Rights.vue')
+const Roles = () =>
+    import ('./components/power/Roles.vue')
 
 
 Vue.use(Router)
@@ -42,9 +43,10 @@ const routes = [{
                 component: Users
             },
             {
-                path: '/roles',
-                component: rout
-            }
+                path: '/rights',
+                component: Rights
+            },
+            { path: '/roles', component: Roles }
         ]
 
     }
